@@ -18,7 +18,7 @@ ol, ul {
   margin-bottom: 10px;
 }
 
-.square {
+.square , .winningSquare, .selectedSquare {
   background: #fff;
   border: 1px solid #999;
   float: left;
@@ -48,4 +48,22 @@ ol, ul {
 
 .game-info {
   margin-left: 20px;
+}
+
+/* Highlights the winning squares when game is won */
+.winningSquare {
+  background-color: yellow;
+}
+.square {
+  transition-duration: 0.4s;
+}
+
+/* Squares already selected are not allowed */
+.winningSquare, .selectedSquare {
+  cursor: not-allowed;
+}
+
+.square:hover {
+  background-color: #C5C5C5;
+  color: white;
 }
