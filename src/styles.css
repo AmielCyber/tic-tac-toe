@@ -14,7 +14,7 @@ ol, ul {
   display: table;
 }
 
-.status {
+.game-status {
   margin-bottom: 10px;
 }
 
@@ -55,15 +55,26 @@ ol, ul {
   background-color: yellow;
 }
 .square {
-  transition-duration: 0.4s;
+  transition-duration: 0.3s;
 }
 
 /* Squares already selected are not allowed */
 .winningSquare, .selectedSquare {
-  cursor: not-allowed;
 }
 
 .square:hover {
   background-color: #C5C5C5;
   color: white;
+}
+.game-history {
+  display: inline-block;
+}
+
+.moveHistoryDesc{
+  font-family: 'Arial';
+  display: flex;
+  font-wieght: normal;
+}
+
+.history-button{
 }
